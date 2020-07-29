@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://www.w3schools.com/w3css/tryw3css_templates_architect.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Josu Etxezarreta</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./W3.CSS Template_files/w3.css">
+<script>
+function basicPopup(url) {
+popupWindow = window.open(url,'popUpWindow','height=500,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+	}
+</script> 
+<style>
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head><body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#top" class="w3-bar-item w3-button"><b>E01</b> Josu Etxezarreta</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="W3.CSS Template.html#about" class="w3-bar-item w3-button">About</a>
+	  <a href="W3.CSS Template.html#tecnun" class="w3-bar-item w3-button">Tecnun</a>
+      <a href="W3.CSS Template.html#projects" class="w3-bar-item w3-button">Research</a>
+      <a href="W3.CSS Template.html#hobbies" class="w3-bar-item w3-button">Hobbies</a>
+	  <a href="W3.CSS Template.html#more_about" class="w3-bar-item w3-button">Network</a>
+      <a href="W3.CSS Template.html#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+<br><br>
+  <img class="w3-image" src="images/tecnun.jpg" alt="Tecnun" width="293" height="300">
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Josu intro Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+	<img  src="./W3.CSS Template_files/etxez.png" align="left" style="padding: 10px; float: left;width:20%;">
+	<BR CLEAR=”left” />
+    <p>Josu Etxezarreta recibió sus títulos de B.S. (con Honores) y M.S. en ingeniería de telecomunicaciones por Tecnun - Escuela de Ingenieros (Universidad de Navarra), San Sebastián, España, en 2016 y 2018, respectivamente. Actualmente está realizando su Ph.D. en ingeniería de telecomunicaciones como asistente de investigación en <a href="https://www.unav.edu/web/departamento-de-ingenieria-biomedica-y-ciencias/investigacion/principios-matematicos/miembros">el grupo de Ciencias Básicas y Matemáticas</a> en Tecnun - Escuela de ingenieros en San Sebastián. Sus estudios están financiados por el Gobierno Vasco (Departamento de Educación) por medio del Programa Predoctoral de Formación de Personal Investigador No Doctor.</p>
+	<p>Sus intereses de investigación están centrados el campo de la computación cuántica, específicamente en el modelado de procesos de <a href="https://es.wikipedia.org/wiki/Decoherencia_cu%C3%A1ntica">decoherencia</a> y la <a href="https://en.wikipedia.org/wiki/Quantum_error_correction">corrección de errores</a>. Su trabajo consiste en hecer modelos aproximados de los procesos físicos que producen ruido en la información cuántica y en el diseño de estrategias para poder combatir dichos efectos nocivos (en concreto, <a href="https://en.wikipedia.org/wiki/Stabilizer_code">códigos estabilizadores</a>).</p>
+  </div>
+  
+  <!-- Tecnun Section -->
+  <div class="w3-container w3-padding-32" id="tecnun">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sobre Tecnun</h3>
+    <p><a href="https://tecnun.unav.edu/">Tecnun</a>, la Escuela Superior de Ingenieros de la Universidad de Navarra,situada en la ciudad de San Sebastián, Guipúzcoa (España), compone junto al Centro de Investigación CEIT el Campus tecnológico de dicha Universidad en la capital guipuzcoana.</p>
+	<p>La Escuela de Ingenieros cuenta con dos sedes: la ubicada en el campus de Ibaeta, en la que se encuentra el edificio docente y de representación y varios edificios de aulas, laboratorios e instalaciones deportivas, en ella también se sitúa el Parque Tecnológico de Miramón, diseñada por el arquitecto Patxi Mangado y construida en el 2006, que contiene aulas y laboratorios de investigación de las áreas de Ingeniería Biomédica, Electricidad, Electrónica y Comunicaciones.
+    </p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.4603246162155!2d-2.012220484513523!3d43.30462227913465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b074770bdbf1%3A0xf4af7a0f8373adcf!2sTecnun%20-%20Escuela%20De%20Ingenier%C3%ADa%20Universidad%20de%20Navarra!5e0!3m2!1ses!2ses!4v1595243110293!5m2!1ses!2ses" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	<iframe width="500" height="400"
+		src="https://www.youtube.com/embed/wFmYkqgcUjM">
+	</iframe>
+  </div>
+  
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Research</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-third l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Decoherence models</div>
+        <img src="./W3.CSS Template_files/transporte.jpg" alt="House" style="width:100%">
+		<p><br>Este área de investigación se centra en construir modelos aproximados de los procesos físicos de decoherencia que corrompen la información cuántica.</p>
+		<p>En general la descripción exacta de la decoherencia que resulta en ruido se hace computacionalemente intratable con recursos clásicos para sitemas con muchos quibts. La consecuencia de esto es que no se pueden modelar en un ordenador clásico este tipo de ruidos y así no se pueden diseñar métodos para corregir dicho ruido.</p>
+		<p>Haciendo uso del conocido <a href="https://en.wikipedia.org/wiki/Gottesman%E2%80%93Knill_theorem">teorema de Gottesmann-Knill</a> y la herrmaienta de la teoría cuántica de la información llamada <a href="https://qtechtheory.org/twirling/">twirling</a>, dichos modelos físicos se pueden aproximar a modelos de ruido computacionalmente tratables por un ordenador clásico.</p>
+		<iframe width="400" height="300"
+		src="https://www.youtube.com/embed/7B1llCxVdkE">
+	</iframe>
+		</div>
+    </div>
+    <div class="w3-third l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Quantum Error Correction</div>
+        <img src="./W3.CSS Template_files/QEC.jpg" alt="House" style="width:95%">
+		<p><br>Este investigador trabaja, también, en el diseño de métodos correctores de errores para computación cuántica. Basandose en modelos de decoherencia aproximados, se construyen esquemas de corrección de errores cuánticos para proteger los quibts de la era <a href="https://quantumcomputing.stackexchange.com/questions/1885/what-is-meant-by-noisy-intermediate-scale-quantum-nisq-technology">post-NISQ</a> </p>
+		<p>En concreto, se diseñan los denominados códigos estabilizadores, que aprovechan la partición del espacio de Hilbert obtenido mediante dichas estructuras apara proteger la información cuántica. </p>
+		<p>Se ha trabajado concretamente con códigos turbo cuánticos y con códigos LDPC (Low Density Parity Check) cuánticos, que son unas de las familias de códigos más prometedoras.</p>
+		<iframe width="400" height="300"
+		src="https://www.youtube.com/embed/4hWUIGZh6WE">
+		</iframe>
+		<h3>Artículos:</h3>
+		<ul>
+		<li><a href="https://www.mdpi.com/1099-4300/21/7/633" onclick="basicPopup(this.href);return false">On the Performance of Interleavers for Quantum Turbo Codes, <i>Entropy</i></a>
+		<li><a href="https://www.mdpi.com/1099-4300/21/12/1133" onclick="basicPopup(this.href);return false">Depolarizing Channel Mismatch and Estimation Protocols for Quantum Turbo Codes, <i>Entropy</i></a>
+		<li><a href="https://journals.aps.org/pra/accepted/d807aN95C351c218366164d3010e8765e167f2e66" onclick="basicPopup(this.href);return false">Approach for the construction of non-Calderbank-Steane-Shor low-density-generator-matrix–based quantum codes, <i>Physical Review A</i></a>
+		
+		</ul>
+	  </div>
+    </div>
+	<div class="w3-third l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Otros:</div>
+		<p><br><br><br>A parte de los temas principales de la tesis, interesan también: procesado de señal, localización, teoría clásica de la información o matemáticas.</p>
+		<h3>Artículos:</h3>
+		<ul>
+		<li><a href="https://ieeexplore.ieee.org/abstract/document/7954206" onclick="basicPopup(this.href);return false">GNSS interference monitoring and characterisation station, <i>IEEE Xplore</i></a>
+		</ul>
+	  </div>
+	   <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Redes sociales para la investigación:</div>
+		<br><br>
+		<ul>
+		<li><a href="https://scholar.google.com/citations?user=gwbNUagAAAAJ&hl=es" onclick="basicPopup(this.href);return false">Google scholar</a>
+		<li><a href="https://orcid.org/0000-0001-7058-8426" onclick="basicPopup(this.href);return false">ORCiD</a>
+		<li><a href="https://www.researchgate.net/profile/Josu_Etxezarreta" onclick="basicPopup(this.href);return false">Researchgate</a>
+		
+		</ul>
+	  </div>
+    </div>
+  </div>
+  </div>
+  <div class="w3-container w3-padding-32" id="hobbies">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Hobbies</h3>
+	<h4>Rugby</h4>
+	<p>Uno de mis pasatiempos favoritos es el de jugar al rugby. Actualmente juego en el Bera Bera R.T., donde juego las posiciones de flanker y número 8. Normalmente entreno 3 días a la semana con mi equipo, y los fines de semana jugamos el partido correspondiente. Como entrenamiento adicional suelo ir al gimnasio 2 veces a la semana a hacer pesas y ganar musculatura para el deporte.</p>
+	<img  src="./W3.CSS Template_files/allblacks.jpg" style="width:80%;">
+	<p><br>En la imagen vemos mi partido de debut con los All Blacks, la mejor selección de rugby del mundo. Tras su insitencia tuve que pedir la nacionalidad neozelandesa y así poder jugar con ellos.</p>
+	<h4>Lectura</h4>
+	<p>Otra de mis actividades favoritas es la lectura. Desde que impartimos en la ikastola la asignatura de filosofía he estado interesado en la lectura sobre los temas filosóficos más importantes como pueden ser la libertad o el sentido de la vida.</p>
+	<p>En estos momentos estoy leyendo los siguientes libros:</p>
+	<div class="w3-half l3 m6 w3-margin-bottom">
+	<div class="flip-box">
+	 <div class="flip-box-inner">
+		<div class="flip-box-front">
+		  <img src="./W3.CSS Template_files/kierkegaard.jpg" alt="kierkegaard" style="width:100%">
+		</div>
+		<div class="flip-box-back">
+		  <h2>El concepto de la angustia</h2>
+		  <h3>Sören Kierkegaard</p>
+		  <p>Publicado por primera vez en 1844, "El concepto de la angustia" es quizá el libro más conocido del danés Sören Kierkegaard (1813-1855), y en él se articulan algunos de los conceptos en los que se apoya el existencialismo. Engendrada por la nada, alimentada por la impaciencia, surgida como "realidad de la libertad en cuanto posibilidad", la angustia es "el vértigo de la libertad".</p>
+		</div>
+	  </div>
+	</div>
+	</div>
+	<div class="w3-half l3 m6 w3-margin-bottom">
+	<div class="flip-box">
+	 <div class="flip-box-inner">
+		<div class="flip-box-front">
+		  <img src="./W3.CSS Template_files/bauman.jpg" alt="kierkegaard" style="width:100%">
+		</div>
+		<div class="flip-box-back">
+		  <h2>Amor Líquido</h2>
+		  <h3>Zygmunt Bauman</p>
+		  <p>Zygmunt Bauman se centra, en esta ocasión, en el amor en el mundo globalizado . Nos habla del miedo a establecer relaciones duraderas más allá de las meras conexiones; de la solidaridad, que parece depender de los beneficios que genera; del amor al prójimo, uno de los fundamentos de la vida civilizada; y de los diversos proyectos para «deshumanizar» a los refugiados, a los marginados, a los pobres.</p>
+		</div>
+	  </div>
+	</div>
+	</div>
+  </div>
+
+
+  <div class="w3-row-padding w3-grayscale" id="more_about">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Network</h3>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="./W3.CSS Template_files/Nagore.jpeg" alt="Josu" style="width:58%">
+      <h3>Nagore Iturbe</h3>
+      <p class="w3-opacity">Ingeniera de Telecomunicaciones</p>
+      <p>Comunicaciones V2X</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://nagoreiturbe.github.io'">More about Nagore</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="./W3.CSS Template_files/NereaFernandezBerrueta.jpg" alt="Nerea" style="width:50%">
+      <h3>Nerea Fernández</h3>
+      <p class="w3-opacity">Ingeniera de Telecomunicaciones</p>
+      <p>Comunicaciones en trenes</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://nereafernandezberrueta.github.io'">More about Nerea</button></p>	  
+
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="./W3.CSS Template_files/Aitor.jpg" alt="Aitor" style="width:65%">
+      <h3>Aitor Erenchun</h3>
+      <p class="w3-opacity">Ingeniero Mecánico</p>
+      <p>Control Activo de Vibraciones</p>
+      <p><button class="w3-button w3-light-grey w3-block">More about Aitor</button></p>
+    </div>
+  </div>
+  
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+	<h4>Social Media:</p>
+		<a href="https://www.linkedin.com/in/josu-etxezarreta-martinez-725b1b114/" class="fa fa-linkedin"></a>
+		<a href="https://www.instagram.com/cristiano/?hl=es" class="fa fa-instagram"></a>
+		<a href="https://twitter.com/fernandosimon_?lang=es" class="fa fa-twitter"></a>
+		<a href="https://www.facebook.com/zuck" class="fa fa-facebook"></a>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="mailto:jetxezarreta@tecnun.es" method="post" enctype="text/plain" onsubmit="location.href='thanks.html'">   
+	  <input class="w3-input w3-section w3-border" type="text" placeholder="Name" required="" name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required="" name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required="" name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required="" name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>	  
+    </form>
+  </div>
+  
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+</body></html>
